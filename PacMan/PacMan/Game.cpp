@@ -311,14 +311,12 @@ bool Game::Update(float deltaTime)
 
 	sumTimer += deltaTime;
 
-	//controlGhost(sumTimer, level.pinky);
-
 	controlGhost(deltaTime, level.blinky, 0.9);
 
-	if (level.quantityCoin < 240)
-	{
-		controlGhost(deltaTime, level.inky, 0.8);
-	}
+	//if (level.quantityCoin < 240)
+	//{
+	//	controlGhost(deltaTime, level.inky, 0.8);
+	//}
 
 	if (level.timerEnergizer>0) 
 	{ 
