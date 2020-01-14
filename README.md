@@ -1,1 +1,0 @@
-# Chernitsa_Artyr
