@@ -6,10 +6,22 @@
 
 Level::Level()
 {
-	playerX = startPlayerX = 14;
-	playerY = startPlayerY = 12;
+
+	player = new Pacman(1, 18);
+
+	blinky = new Blinky(14, 10);
+	pinky = new Pinky(16, 10);
+	inky = new Inky(13, 10);
+	clyde = new Clyde(15, 10);
+
+	coin = new Coin();
+	energizer = new Energizer();
+
+	startPlayerX = player->coordFigure()->earlyX;
+	startPlayerY = player->coordFigure()->earlyY;
 
 	level = 1;
+	speed = 1;
 
 	pointPlayer = 0;
 	healthLevel = 5;
@@ -18,24 +30,12 @@ Level::Level()
 
 	timerEnergizer = 0;
 
-	player = new Pacman();
-
-	blinky = new Blinky();
-	pinky = new Pinky();
-	inky = new Inky();
-	clyde = new Clyde();
-
-	coin = new Coin();
-	energizer = new Energizer();
-
-	arrayFigure[playerY][playerX] = player;
+	arrayFigure[player->coordFigure()->y][player->coordFigure()->x] = player;
 
 	arrayFigure[blinky->coordFigure()->y][blinky->coordFigure()->x] = blinky;
 	arrayFigure[pinky->coordFigure()->y][pinky->coordFigure()->x] = pinky;
 	arrayFigure[inky->coordFigure()->y][inky->coordFigure()->x] = inky;
 	arrayFigure[clyde->coordFigure()->y][clyde->coordFigure()->x] = clyde;
-
-	arrayFigure[3][7] = energizer;
 
 	updateEnergizer();
 	updateCoin();
@@ -75,9 +75,4 @@ void Level::updateEnergizer(){
 			temp--;
 		}
 	}
-}
-
-void Level::movePlayer() 
-{
-
 }
