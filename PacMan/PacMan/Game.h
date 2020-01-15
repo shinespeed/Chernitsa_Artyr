@@ -10,13 +10,7 @@ class Game : public BaseApp
 
 		int addSumFigure;
 		float sumTimer;
-		float sumTempTimer;
-        
-		int tempFigureX;
-		int tempFigureY;
-
-		int tempX;
-		int tempY;
+     
 
 		bool mDirection;
 
@@ -34,12 +28,13 @@ class Game : public BaseApp
 
 		void controlPlayer(int playerX, int playerY);
 		bool moveRegulFigure(int positionX, int positionY);
-		void setEatEnergizer();
 		void updateLevel();
 
-		void moveGhost(Figure* ghost, int providingDirectiont);
+		void moveGhost(Figure* ghost, int x, int y);
+		void directionGhost(Figure* ghost, int providingDirectiont);
 		void controlMoveGhost(Figure* ghost);
-		void controlGhost(float deltaTime, Figure* ghost, float speed);
+		void controlGhost(float deltaTime, Figure* ghost, double speed);
+
 		int providingDirection(Figure* ghost);
 
 		virtual void KeyPressed(int btnCode);
