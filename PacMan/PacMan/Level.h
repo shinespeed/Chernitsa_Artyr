@@ -22,9 +22,10 @@ public:
 	int level;
 
 	int pointPlayer;
-	int healthLevel;
+	short healthLevel;
 	int quantityEnergizer;
 	int quantityCoin;
+	double speed;
 
 	int timerEnergizer;
 
@@ -91,6 +92,5 @@ public:
 	~Level();
 	void updateEnergizer();
 	void updateCoin();
-	void movePlayer();
 };
 
