@@ -40,7 +40,7 @@ private:
 
 public:
 
-	Pacman();
+	Pacman(int x, int y);
 
 	coord* coordFigure();
 };
@@ -54,7 +54,7 @@ private:
 
 public:
 
-	Blinky();
+	Blinky(int x, int y);
 
 	coord* coordFigure();
 };
@@ -67,7 +67,7 @@ private:
 
 public:
 
-	Pinky();
+	Pinky(int x, int y);
 
 	coord* coordFigure();
 };
@@ -80,7 +80,7 @@ private:
 
 public:
 
-	Inky();
+	Inky(int x, int y);
 
 	coord* coordFigure();
 };
@@ -93,7 +93,7 @@ private:
 
 public:
 
-	Clyde();
+	Clyde(int x, int y);
 
 	coord* coordFigure();
 };
