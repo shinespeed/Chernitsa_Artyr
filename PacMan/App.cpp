@@ -1,7 +1,7 @@
 #include "App.h"
 
 App::App():
-	BaseApp(45, 21),
+	BaseApp(ARRAY_X + 15, ARRAY + 1),
 	mDirection(true),
 	menuOption(MenuOption::NEWGAME),
 	menuY(6),
