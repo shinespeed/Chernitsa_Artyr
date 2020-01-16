@@ -5,7 +5,7 @@
 #include "GlobalConst.h"
 
 Game::Game(): 
-	BaseApp(ARRAYX+16, ARRAY+1), 
+	BaseApp(ARRAY_X + 15, ARRAY_Y + 1), 
 	mDirection(true), 
 	m_providinGhost(-1), 
 	m_temp(nullptr)
