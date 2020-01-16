@@ -69,10 +69,10 @@ Level::Level():
 {	
 	player = new Pacman(1, 18);
 
-	blinky = new  Ghost(14, 10, TypeFigure::BLINKY);
-	pinky = new Ghost(16, 10, TypeFigure::PINKY);
-	inky = new Ghost(13, 10, TypeFigure::INKY);
-	clyde = new Ghost(15, 10, TypeFigure::CLAYDE);
+	blinky = new  Ghost(STARTGHOSTX, STARTGHOSTY, TypeFigure::BLINKY);
+	pinky = new Ghost(STARTGHOSTX + 2, STARTGHOSTY, TypeFigure::PINKY);
+	inky = new Ghost(STARTGHOSTX - 1, STARTGHOSTY, TypeFigure::INKY);
+	clyde = new Ghost(STARTGHOSTX + 1, STARTGHOSTY, TypeFigure::CLAYDE);
 
 	coin = new Coin();
 	energizer = new Energizer();
