@@ -30,7 +30,6 @@ void CStopwatch::Start()
 
 int CStopwatch::Now()
 {
-    // возвращает число миллисекунд после вызова Start
         LARGE_INTEGER liPerfNow;
         QueryPerformanceCounter(&liPerfNow);
 	return (((liPerfNow.QuadPart - m_liPerfStart.QuadPart) * 1000) / m_liPerfFreq.QuadPart);
