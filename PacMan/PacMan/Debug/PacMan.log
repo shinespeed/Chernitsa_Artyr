@@ -1,9 +1,0 @@
-﻿  Game.cpp
-c:\users\shine_speed\source\repos\pacman\pacman\game.cpp(221): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-c:\users\shine_speed\source\repos\pacman\pacman\game.cpp(227): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-c:\users\shine_speed\source\repos\pacman\pacman\game.cpp(233): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-c:\users\shine_speed\source\repos\pacman\pacman\game.cpp(239): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-c:\users\shine_speed\source\repos\pacman\pacman\game.cpp(316): warning C4305: аргумент: усечение из "double" в "float"
-c:\users\shine_speed\source\repos\pacman\pacman\game.cpp(320): warning C4305: аргумент: усечение из "double" в "float"
-c:\users\shine_speed\source\repos\pacman\pacman\game.cpp(98): warning C4715: Game::moveRegulFigure: значение возвращается не при всех путях выполнения
-  PacMan.vcxproj -> C:\Users\shine_speed\source\repos\PacMan\Debug\PacMan.exe
