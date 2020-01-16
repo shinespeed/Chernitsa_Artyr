@@ -113,10 +113,8 @@ bool Game::moveRegulFigure(int positionX, int positionY)
 			return false;
 		}
 	}
-	else
-	{
-		return false;
-	}
+	else return false;
+	
 }
 
 void Game::moveGhost(Figure* Ghost, int x, int y) 
