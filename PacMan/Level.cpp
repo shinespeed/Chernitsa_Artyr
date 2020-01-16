@@ -58,13 +58,13 @@ Level::Level():
 
     },
 
-	level(1),
+    level(1),
     speed (0.04),
-	pointCount(0),
+    pointCount(0),
     healthLevel(5),
-	energizerCount(5),
+    energizerCount(5),
     coinCount(0),
-	timerEnergizer(0)
+    timerEnergizer(0)
 
 {	
 	player = new Pacman(1, 18);
