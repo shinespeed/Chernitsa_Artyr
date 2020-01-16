@@ -7,8 +7,8 @@
 #include "GlobalConst.h"
 
 Level::Level(): 
-	d(new DecisionPoint()),
-	w(new Wall()),
+    d(new DecisionPoint()),
+    w(new Wall()),
     arrayFigure
     {
 	    { w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w},
