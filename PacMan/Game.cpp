@@ -33,13 +33,13 @@ void Game::KeyPressed(int btnCode)
 		level.player->coordFigure()->earlyX++;
 	}
 
-	if ((level.player->coordFigure()->x == 29) && (level.player->coordFigure()->y == 11))
+	if ((level.player->coordFigure()->x == RIGHT_TELEPORT_X) && (level.player->coordFigure()->y == TELEPORT_Y))
 	{
-		controlPlayer(1, 11);
+		controlPlayer(LEFT_TELEPORT_X + 1, TELEPORT_Y);
 	}
-	else if ((level.player->coordFigure()->x == 0) && (level.player->coordFigure()->y == 11))
+	else if ((level.player->coordFigure()->x == LEFT_TELEPORT_X) && (level.player->coordFigure()->y == TELEPORT_Y))
 	{
-		controlPlayer(28, 11);
+		controlPlayer(RIGHT_TELEPORT_X -1, TELEPORT_Y);
 	}
 	else controlPlayer(level.player->coordFigure()->earlyX, level.player->coordFigure()->earlyY);
 	
