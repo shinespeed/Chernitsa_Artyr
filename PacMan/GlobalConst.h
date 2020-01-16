@@ -13,6 +13,12 @@ const int MAGENTA = 5;
 const int PURPURE = 3;
 const int ORANGE = 14;
 
+const int STARTGHOSTX = 14;
+const int STARTGHOSTY = 10;
+
+const int STARTPLAYERX = 1;
+const int STARTPLAYERY = 18;
+
 const int SYMBOLPACMEN = 2;
 const int SYMBOLGHOST = 1;
 const int SYMBOLWALL = 10;
