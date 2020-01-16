@@ -16,7 +16,7 @@ const int ORANGE = 14;
 const int STARTGHOSTX = 14;
 const int STARTGHOSTY = 10;
 
-const int LEFT_TELEPORT_X = 1;
+const int LEFT_TELEPORT_X = 0;
 const int RIGHT_TELEPORT_X = 29;
 const int TELEPORT_Y = 11;
 
