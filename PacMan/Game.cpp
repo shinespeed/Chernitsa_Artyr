@@ -1,4 +1,4 @@
-﻿#include "Game.h"
+#include "Game.h"
 #include "time.h"
 #include "Level.h"
 #include "Figure.h"
@@ -143,19 +143,19 @@ void Game::moveGhost(Figure* Ghost, int x, int y)
 
 void Game::directionGhost(Figure* Ghost, int providingDirection)
 {
-	if (providingDirection == 1) //DOWN
+	if (providingDirection == DOWN_DIRECTION) //DOWN
 	{
 		moveGhost(Ghost, Ghost->coordFigure()->x , Ghost->coordFigure()->y + 1);
 	}
-	else if (providingDirection == 2) //UP
+	else if (providingDirection == UP_DIRECTION) //UP
 	{
 		moveGhost(Ghost, Ghost->coordFigure()->x, Ghost->coordFigure()->y - 1);
 	}
-	else if (providingDirection == 3) //LEFT
+	else if (providingDirection == LEFT_DIRECTION) //LEFT
 	{
 		moveGhost(Ghost, Ghost->coordFigure()->x - 1, Ghost->coordFigure()->y);
 	}
-	else if (providingDirection == 4)
+	else if (providingDirection == RIGHT_DIRECTION)
 	{
 		moveGhost(Ghost, Ghost->coordFigure()->x + 1, Ghost->coordFigure()->y);
 	}
@@ -184,19 +184,19 @@ void Game::controlMoveGhost(Figure* Ghost)
 
 		if (moveRegulFigure(Ghost->coordFigure()->x, Ghost->coordFigure()->y - 1) && (m_providinGhost != 1))
 		{
-			m_providinGhost = 2;
+			m_providinGhost = UP_DIRECTION;
 		}
 		else if ((moveRegulFigure(Ghost->coordFigure()->x - 1, Ghost->coordFigure()->y)) && (m_providinGhost != 4))
 		{
-			m_providinGhost = 3;
+			m_providinGhost = LEFT_DIRECTION;
 		}
 		else if (moveRegulFigure(Ghost->coordFigure()->x + 1, Ghost->coordFigure()->y) && (m_providinGhost != 3))
 		{
-			m_providinGhost = 4;
+			m_providinGhost = RIGHT_DIRECTION;
 		}
 		else if (moveRegulFigure(Ghost->coordFigure()->x, Ghost->coordFigure()->y + 1) && (m_providinGhost != 2))
 		{
-			m_providinGhost = 1;
+			m_providinGhost = DOWN_DIRECTION;
 		}
 		else m_providinGhost = 0;
 	}
