@@ -29,6 +29,7 @@ private:
 	Game* game;
 
 	void Render();
+	void BonorderMenu(int i, int j);
 	void generationBonorderMenu();
 	void newGame();
 };
