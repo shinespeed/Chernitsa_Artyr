@@ -38,16 +38,21 @@ void App::newGame()
 	game->Run();
 }
 
+void App::BonorderMenu(int i, int j) 
+{
+	if ((i == 0) || (j == 0) || (i == MENU_ARRAY_BORDER_X - 1) || (j == MENU_ARRAY_BORDER_Y - 1))
+	{
+		SetChar(i + MENU_CONSOL_BORDER_X, j + MENU_CONSOL_BORDER_Y, WHITE, SYMBOLBORDER);
+	}
+}
+
 void App::generationBonorderMenu()
 {
 	for (int i = 0; i < MENU_ARRAY_BORDER_X; ++i)
 	{
 		for (int j = 0; j < MENU_ARRAY_BORDER_Y; ++j)
 		{
-			if ((i == 0) || (j == 0) || (i == MENU_ARRAY_BORDER_X-1) || (j == MENU_ARRAY_BORDER_Y-1))
-			{
-				SetChar(i + MENU_CONSOL_BORDER_X, j + MENU_CONSOL_BORDER_Y, WHITE, SYMBOLBORDER);
-			}
+			BonorderMenu(i, j);
 		}
 	}
 }
