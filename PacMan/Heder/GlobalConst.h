@@ -40,6 +40,11 @@ const int LEFT = 97;
 const int RIGHT= 100;
 const int ENTER = 13;
 
+const int UP_DIRECTION = 2;
+const int DOWN_DIRECTION = 1;
+const int LEFT_DIRECTION = 3;
+const int RIGHT_DIRECTION = 4;
+
 const int MENU_ARRAY_BORDER_X = 21;
 const int MENU_ARRAY_BORDER_Y = 10;
 const int MENU_CONSOL_BORDER_X = 13;
